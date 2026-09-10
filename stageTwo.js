@@ -30,6 +30,7 @@ function getTimeRemaining(endtime) {
 }
 function initializeClock(id, endtime) {
   var clock = document.getElementById(id);
+  if (!clock) return;
   var minutesSpan = clock.querySelector('.minutes');
   var secondsSpan = clock.querySelector('.seconds');
   function updateClock() {
